@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.typewriter h1 {
+    border-right: 4px solid #333; /* カーソルのスタイル */
+    white-space: nowrap; /* テキストの折り返しを防ぐ */
+    overflow: hidden; /* コンテナの外に出る部分を隠す */
+    width: 0; /* 初期状態では幅を0に設定 */
+    animation: typing 3s steps(30) forwards, blink 0.75s step-end infinite; /* タイピングアニメーションと点滅 */
+    color: red; /* 404 Not Found の文字を赤に設定 */
+}
+
+@keyframes typing {
+    from {
+        width: 0; /* 初期状態 */
+    }
+    to {
+        width: 100%; /* 最終的にテキスト全体を表示 */
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent; /* カーソルの点滅効果 */
+    }
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
